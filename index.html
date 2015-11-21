@@ -36,47 +36,64 @@
 		.reveal {
 			font-size: 30px;
 		}
+		p.attribution {
+			bottom: 3%;
+			display: none;
+			font-size: 0.4em;
+			left: 3%;
+			padding: 1em;
+			position: absolute;
+			z-index: 999;
+		}
+		.attribution-active p.attribution {
+			display: block;
+		}
+		.contrast {
+			background-color: rgba(0,0,0,0.7);
+		}
 	</style>
 </head>
 
 <body>
 
 <div class="reveal">
+	<p class="attribution contrast"></p>
 	<div class="slides">
 		<section>
 			<h1>Free/Libre Open Source Software (FLOSS) and everyday life</h1>
 			<p>I am <a href="http://drupal.org/u/xano">Xano</a>, <a href="https://github.com/bartfeenstra">bartfeenstra</a>, <a href="http://twitter.com/bartfeenstra">@BartFeenstra</a>, and <a href="http://mynameisbart.com">http://mynameisbart.com</a>.</p>
 		</section>
 		<section>
-			<section>
-				<h1>Doom</h1>
+			<section data-background="./images/doom.jpg" data-state="attribution-active doom">
+				<style>.doom .attribution:after { content: '© ID Software'; }</style>
 			</section>
-			<section>
-				<h1>Lego Mindstorms</h1>
+			<section data-background="./images/lego_mindstorms.jpg" data-state="attribution-active lego-mindstorms">
+				<style>.lego-mindstorms .attribution:after { content: '© FIAP @ Flickr (CC BY-NC 2.0)'; }</style>
 			</section>
-			<section>
-				<h1>Arduino</h1>
+			<section data-background="./images/arduino.jpg" data-state="attribution-active arduino">
+				<style>.arduino .attribution:after { content: '© tinkerlog @ Flickr (CC BY-NC 2.0)'; }</style>
 			</section>
-			<section>
-				<h1>LibreOffice</h1>
+			<section data-background-color="white" data-state="attribution-active libre-office">
+				<style>.libre-office .attribution:after { content: '© The Document Foundation (CC BY-SA 3.0)'; }</style>
+				<img src="./images/libre_office.svg" style="background-color: white;" />
 			</section>
-			<section>
-				<h1>The Gimp</h1>
+			<section data-background="./images/gimp.png" data-state="attribution-active gimp">
+				<style>.gimp .attribution:after { content: '© GNU (GPLv3)'; }</style>
 			</section>
-			<section>
-				<h1>Blender 3D</h1>
+			<section data-background="./images/blender_3d.png" data-state="attribution-active blender-3d">
+				<style>.blender-3d .attribution:after { content: '© Blender Foundation (GPLv3)'; }</style>
 			</section>
-			<section>
-				<h1>Xbox</h1>
+			<section data-background="./images/xbox_360.jpg" data-state="attribution-active xbox-360">
+				<style>.xbox-360 .attribution:after { content: '© Björn Olsson @ Flickr (CC BY-NC-ND 2.0)'; }</style>
 			</section>
-			<section>
-				<h1>Apple iPhone</h1>
+			<section data-background="./images/iphones.jpg" data-state="attribution-active iphone">
+				<style>.iphone .attribution:after { content: '© Yutaka Tsutano @ Flickr (CC BY 2.0)'; }</style>
 			</section>
-			<section>
-				<h1>Volkswagen emission scandal</h1>
+			<section data-background="./images/volkswagen.jpg" data-state="attribution-active volkswagen">
+				<style>.volkswagen .attribution:after { content: '© Mario Roberto Duran Ortiz @ Wikipedia (CC BY-SA 3.0)'; }</style>
 			</section>
-			<section>
-				<h1>OV-Chipkaart</h1>
+			<section data-background="./images/ov_chipkaart.jpg" data-state="attribution-active ov-chipkaart">
+				<style>.ov-chipkaart .attribution:after { content: '© Franklin Heijnen @ Flickr (CC BY-SA 2.0)'; }</style>
 			</section>
 		</section>
 		<section>
